@@ -32,6 +32,9 @@ public class AntiqueAtlasConfig extends WrappedConfig {
     @Comment("Whether to keep offset after closing the map")
     public boolean keepOffset = false;
 
+	@Comment("Whether to show the player indicator")
+	public boolean showPlayer = true;
+
     @Comment("How to depict player death locations.")
     public GraveStyle graveStyle = GraveStyle.EUPHEMISMS;
 
