@@ -720,6 +720,9 @@ public class AtlasScreen extends Component {
     }
 
     private void renderPlayer(DrawContext context, PlayerSummary player, float iconScale, boolean hovering, boolean self) {
+
+		if (!AntiqueAtlas.CONFIG.showPlayer) return;
+		
         double playerOffsetX = worldXToScreenX(player.pos().getX()) - getGuiX();
         double playerOffsetY = worldZToScreenY(player.pos().getZ()) - getGuiY();
 
